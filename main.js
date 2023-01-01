@@ -48,7 +48,7 @@ let activateEyeDropper = () => {
     } catch (e) {
       console.log("Failed to copy the color code!");
     }
-    document.body.style.display = "block";
+    document.body.style.display = "flex";
   }, 10);
 };
 
