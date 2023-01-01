@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.popup {
+  width: 350px;
+}
+.popup :where(.picker, header, .all-colors, .color) {
+  display: flex;
+  align-items: center;
+}
+.popup .picker {
+  background-color: #e3f2fd;
+  padding: 30px 0;
+  justify-content: center;
+}
+.popup .picker #color-picker {
+  border: none;
+  outline: none;
+  background: #5372f0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.picked-colors {
+  margin: 10px 15px;
+}
+.picked-colors.hide {
+  display: none;
+}
+.picked-colors header {
+  justify-content: space-between;
+}
+.picked-colors header .title {
+  font-size: 1rem;
+}
+.picked-colors .clear-all {
+  color: #5372f0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.all-colors {
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.all-colors .color {
+  cursor: pointer;
+  width: calc(100% / 3);
+  margin-bottom: 10px;
+}
+.all-colors .color .rect {
+  display: block;
+  height: 22px;
+  width: 22px;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+.all-colors .color .value {
+  font-size: .96rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
